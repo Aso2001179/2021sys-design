@@ -59,7 +59,7 @@ entity "購入詳細テーブル" as order_detail <d_purchase> <<T,TRANSACTION_M
    price
    num
    }
-    entity "商品マスタ" as customer <m_customers> <<M,MASTER_MARK_COLOR>> {
+    entity "商品マスタ" as cltems <m_items> <<M,MASTER_MARK_COLOR>> {
         + item_code [PK]
         --
         item_name
