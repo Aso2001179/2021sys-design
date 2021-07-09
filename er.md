@@ -70,6 +70,16 @@ entity "購入詳細テーブル" as order_detail <d_purchase> <<T,TRANSACTION_M
         del_flag
         reg_date
     }
+ entity "カテゴリマスタ" as category <m_category> <<M,MASTER_MARK_COLOR>> {
+        + category_id [PK]
+        --
+        name
+        reg_date
+    }   
   }
+ customer       |o-ri-o{     order
+order          ||-ri-|{     order_detail
+order_detail    }-do-||     items
+items          }o-le-||     category 
 @enduml
 ```
