@@ -1,3 +1,3 @@
 #DB定義書
 ## ER図
-[ER図](https://github.com/Aso2001179/2021sys-design/blob/main/er.md)
+[ER図](https://github.com/Aso2001179/2021sys-design/blob/main/er.md"ER図はこちら")
